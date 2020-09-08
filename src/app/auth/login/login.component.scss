@@ -1,0 +1,25 @@
+/* Structure */
+#grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-areas:    "l l email      r r"
+                            "l l password   r r"
+                            "l l button     r r";
+    grid-gap: 1rem;
+}
+
+#email {
+    grid-area: email;
+}
+
+#password {
+    grid-area: password;
+}
+
+#button {
+    grid-area: button;
+    width: fit-content;
+    justify-self: center;
+    padding: 0 1rem;
+}
